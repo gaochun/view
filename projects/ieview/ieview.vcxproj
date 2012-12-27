@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{1992A517-9885-4623-B035-52C0D8E343CC}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ieview</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\firebreath-FireBreath-df8659e\build\bin\ieview\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ieview.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">npieview</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\firebreath-FireBreath-df8659e\build\bin\ieview\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ieview.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">npieview</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\firebreath-FireBreath-df8659e\build\bin\ieview\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">ieview.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">npieview</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\firebreath-FireBreath-df8659e\build\bin\ieview\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">ieview.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">npieview</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm256 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:/firebreath-FireBreath-df8659e;E:/firebreath-FireBreath-df8659e/src/3rdParty/gecko-sdk/includes;E:/firebreath-FireBreath-df8659e/src/NpapiCore;E:/firebreath-FireBreath-df8659e/src/ActiveXCore;E:/firebreath-FireBreath-df8659e/src/ScriptingCore;E:/firebreath-FireBreath-df8659e/src/PluginAuto/Win;E:/firebreath-FireBreath-df8659e/src/PluginAuto;E:/firebreath-FireBreath-df8659e/src/PluginCore;E:/firebreath-FireBreath-df8659e/build/projects/ieview/gen;E:/firebreath-FireBreath-df8659e/src/3rdParty/boost;C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/atlmfc/include;E:/firebreath-FireBreath-df8659e/src/config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4290</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDLL;FB_WIN=1;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BOOST_ALL_NO_LIB=1;DEBUG;_DEBUG;_ATL_STATIC_REGISTRY;CMAKE_INTDIR="Debug";ieview_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>E:/firebreath-FireBreath-df8659e/build/bin/ieview/Debug/npieview.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDLL;FB_WIN=1;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BOOST_ALL_NO_LIB=1;DEBUG;_DEBUG;_ATL_STATIC_REGISTRY;CMAKE_INTDIR=\"Debug\";ieview_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:/firebreath-FireBreath-df8659e;E:/firebreath-FireBreath-df8659e/src/3rdParty/gecko-sdk/includes;E:/firebreath-FireBreath-df8659e/src/NpapiCore;E:/firebreath-FireBreath-df8659e/src/ActiveXCore;E:/firebreath-FireBreath-df8659e/src/ScriptingCore;E:/firebreath-FireBreath-df8659e/src/PluginAuto/Win;E:/firebreath-FireBreath-df8659e/src/PluginAuto;E:/firebreath-FireBreath-df8659e/src/PluginCore;E:/firebreath-FireBreath-df8659e/build/projects/ieview/gen;E:/firebreath-FireBreath-df8659e/src/3rdParty/boost;C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/atlmfc/include;E:/firebreath-FireBreath-df8659e/src/config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:/firebreath-FireBreath-df8659e;E:/firebreath-FireBreath-df8659e/src/3rdParty/gecko-sdk/includes;E:/firebreath-FireBreath-df8659e/src/NpapiCore;E:/firebreath-FireBreath-df8659e/src/ActiveXCore;E:/firebreath-FireBreath-df8659e/src/ScriptingCore;E:/firebreath-FireBreath-df8659e/src/PluginAuto/Win;E:/firebreath-FireBreath-df8659e/src/PluginAuto;E:/firebreath-FireBreath-df8659e/src/PluginCore;E:/firebreath-FireBreath-df8659e/build/projects/ieview/gen;E:/firebreath-FireBreath-df8659e/src/3rdParty/boost;C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/atlmfc/include;E:/firebreath-FireBreath-df8659e/src/config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;psapi.lib;..\..\ActiveXCore\Debug\ActiveXCore.lib;..\..\PluginCore\Debug\PluginCore.lib;PluginAuto\Debug\iev_PluginAuto.lib;..\..\NpapiCore\Debug\NpapiCore.lib;..\..\ScriptingCore\Debug\ScriptingCore.lib;..\..\PluginCore\Debug\PluginCore.lib;..\..\boost\libs\thread\Debug\boost_thread.lib;..\..\boost\libs\system\Debug\boost_system.lib;psapi.lib;Wininet.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/atlmfc/lib</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>E:/firebreath-FireBreath-df8659e/build/projects/ieview/Debug/npieview.lib</ImportLibrary>
+      <LinkIncremental>true</LinkIncremental>
+      <ModuleDefinitionFile>E:/firebreath-FireBreath-df8659e/build/projects/ieview/gen/FireBreathWin.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>E:/firebreath-FireBreath-df8659e/build/bin/ieview/Debug/npieview.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm256 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:/firebreath-FireBreath-df8659e;E:/firebreath-FireBreath-df8659e/src/3rdParty/gecko-sdk/includes;E:/firebreath-FireBreath-df8659e/src/NpapiCore;E:/firebreath-FireBreath-df8659e/src/ActiveXCore;E:/firebreath-FireBreath-df8659e/src/ScriptingCore;E:/firebreath-FireBreath-df8659e/src/PluginAuto/Win;E:/firebreath-FireBreath-df8659e/src/PluginAuto;E:/firebreath-FireBreath-df8659e/src/PluginCore;E:/firebreath-FireBreath-df8659e/build/projects/ieview/gen;E:/firebreath-FireBreath-df8659e/src/3rdParty/boost;C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/atlmfc/include;E:/firebreath-FireBreath-df8659e/src/config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4290</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDLL;FB_WIN=1;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BOOST_ALL_NO_LIB=1;NDEBUG;_ATL_STATIC_REGISTRY;CMAKE_INTDIR="Release";ieview_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>E:/firebreath-FireBreath-df8659e/build/bin/ieview/Release/npieview.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDLL;FB_WIN=1;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BOOST_ALL_NO_LIB=1;NDEBUG;_ATL_STATIC_REGISTRY;CMAKE_INTDIR=\"Release\";ieview_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:/firebreath-FireBreath-df8659e;E:/firebreath-FireBreath-df8659e/src/3rdParty/gecko-sdk/includes;E:/firebreath-FireBreath-df8659e/src/NpapiCore;E:/firebreath-FireBreath-df8659e/src/ActiveXCore;E:/firebreath-FireBreath-df8659e/src/ScriptingCore;E:/firebreath-FireBreath-df8659e/src/PluginAuto/Win;E:/firebreath-FireBreath-df8659e/src/PluginAuto;E:/firebreath-FireBreath-df8659e/src/PluginCore;E:/firebreath-FireBreath-df8659e/build/projects/ieview/gen;E:/firebreath-FireBreath-df8659e/src/3rdParty/boost;C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/atlmfc/include;E:/firebreath-FireBreath-df8659e/src/config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:/firebreath-FireBreath-df8659e;E:/firebreath-FireBreath-df8659e/src/3rdParty/gecko-sdk/includes;E:/firebreath-FireBreath-df8659e/src/NpapiCore;E:/firebreath-FireBreath-df8659e/src/ActiveXCore;E:/firebreath-FireBreath-df8659e/src/ScriptingCore;E:/firebreath-FireBreath-df8659e/src/PluginAuto/Win;E:/firebreath-FireBreath-df8659e/src/PluginAuto;E:/firebreath-FireBreath-df8659e/src/PluginCore;E:/firebreath-FireBreath-df8659e/build/projects/ieview/gen;E:/firebreath-FireBreath-df8659e/src/3rdParty/boost;C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/atlmfc/include;E:/firebreath-FireBreath-df8659e/src/config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;psapi.lib;..\..\ActiveXCore\Release\ActiveXCore.lib;..\..\PluginCore\Release\PluginCore.lib;PluginAuto\Release\iev_PluginAuto.lib;..\..\NpapiCore\Release\NpapiCore.lib;..\..\ScriptingCore\Release\ScriptingCore.lib;..\..\PluginCore\Release\PluginCore.lib;..\..\boost\libs\thread\Release\boost_thread.lib;..\..\boost\libs\system\Release\boost_system.lib;psapi.lib;Wininet.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/atlmfc/lib</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>E:/firebreath-FireBreath-df8659e/build/projects/ieview/Release/npieview.lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <ModuleDefinitionFile>E:/firebreath-FireBreath-df8659e/build/projects/ieview/gen/FireBreathWin.def</ModuleDefinitionFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>E:/firebreath-FireBreath-df8659e/build/bin/ieview/Release/npieview.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm256 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:/firebreath-FireBreath-df8659e;E:/firebreath-FireBreath-df8659e/src/3rdParty/gecko-sdk/includes;E:/firebreath-FireBreath-df8659e/src/NpapiCore;E:/firebreath-FireBreath-df8659e/src/ActiveXCore;E:/firebreath-FireBreath-df8659e/src/ScriptingCore;E:/firebreath-FireBreath-df8659e/src/PluginAuto/Win;E:/firebreath-FireBreath-df8659e/src/PluginAuto;E:/firebreath-FireBreath-df8659e/src/PluginCore;E:/firebreath-FireBreath-df8659e/build/projects/ieview/gen;E:/firebreath-FireBreath-df8659e/src/3rdParty/boost;C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/atlmfc/include;E:/firebreath-FireBreath-df8659e/src/config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4290</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDLL;FB_WIN=1;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BOOST_ALL_NO_LIB=1;NDEBUG;_ATL_STATIC_REGISTRY;CMAKE_INTDIR="MinSizeRel";ieview_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>MinSizeRel</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>E:/firebreath-FireBreath-df8659e/build/bin/ieview/MinSizeRel/npieview.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDLL;FB_WIN=1;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BOOST_ALL_NO_LIB=1;NDEBUG;_ATL_STATIC_REGISTRY;CMAKE_INTDIR=\"MinSizeRel\";ieview_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:/firebreath-FireBreath-df8659e;E:/firebreath-FireBreath-df8659e/src/3rdParty/gecko-sdk/includes;E:/firebreath-FireBreath-df8659e/src/NpapiCore;E:/firebreath-FireBreath-df8659e/src/ActiveXCore;E:/firebreath-FireBreath-df8659e/src/ScriptingCore;E:/firebreath-FireBreath-df8659e/src/PluginAuto/Win;E:/firebreath-FireBreath-df8659e/src/PluginAuto;E:/firebreath-FireBreath-df8659e/src/PluginCore;E:/firebreath-FireBreath-df8659e/build/projects/ieview/gen;E:/firebreath-FireBreath-df8659e/src/3rdParty/boost;C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/atlmfc/include;E:/firebreath-FireBreath-df8659e/src/config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:/firebreath-FireBreath-df8659e;E:/firebreath-FireBreath-df8659e/src/3rdParty/gecko-sdk/includes;E:/firebreath-FireBreath-df8659e/src/NpapiCore;E:/firebreath-FireBreath-df8659e/src/ActiveXCore;E:/firebreath-FireBreath-df8659e/src/ScriptingCore;E:/firebreath-FireBreath-df8659e/src/PluginAuto/Win;E:/firebreath-FireBreath-df8659e/src/PluginAuto;E:/firebreath-FireBreath-df8659e/src/PluginCore;E:/firebreath-FireBreath-df8659e/build/projects/ieview/gen;E:/firebreath-FireBreath-df8659e/src/3rdParty/boost;C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/atlmfc/include;E:/firebreath-FireBreath-df8659e/src/config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;psapi.lib;..\..\ActiveXCore\MinSizeRel\ActiveXCore.lib;..\..\PluginCore\MinSizeRel\PluginCore.lib;PluginAuto\MinSizeRel\iev_PluginAuto.lib;..\..\NpapiCore\MinSizeRel\NpapiCore.lib;..\..\ScriptingCore\MinSizeRel\ScriptingCore.lib;..\..\PluginCore\MinSizeRel\PluginCore.lib;..\..\boost\libs\thread\MinSizeRel\boost_thread.lib;..\..\boost\libs\system\MinSizeRel\boost_system.lib;psapi.lib;Wininet.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/atlmfc/lib</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>E:/firebreath-FireBreath-df8659e/build/projects/ieview/MinSizeRel/npieview.lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <ModuleDefinitionFile>E:/firebreath-FireBreath-df8659e/build/projects/ieview/gen/FireBreathWin.def</ModuleDefinitionFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>E:/firebreath-FireBreath-df8659e/build/bin/ieview/MinSizeRel/npieview.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm256 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:/firebreath-FireBreath-df8659e;E:/firebreath-FireBreath-df8659e/src/3rdParty/gecko-sdk/includes;E:/firebreath-FireBreath-df8659e/src/NpapiCore;E:/firebreath-FireBreath-df8659e/src/ActiveXCore;E:/firebreath-FireBreath-df8659e/src/ScriptingCore;E:/firebreath-FireBreath-df8659e/src/PluginAuto/Win;E:/firebreath-FireBreath-df8659e/src/PluginAuto;E:/firebreath-FireBreath-df8659e/src/PluginCore;E:/firebreath-FireBreath-df8659e/build/projects/ieview/gen;E:/firebreath-FireBreath-df8659e/src/3rdParty/boost;C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/atlmfc/include;E:/firebreath-FireBreath-df8659e/src/config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4290</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;_WINDLL;FB_WIN=1;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BOOST_ALL_NO_LIB=1;NDEBUG;_ATL_STATIC_REGISTRY;CMAKE_INTDIR="RelWithDebInfo";ieview_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>RelWithDebInfo</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>E:/firebreath-FireBreath-df8659e/build/bin/ieview/RelWithDebInfo/npieview.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDLL;FB_WIN=1;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BOOST_ALL_NO_LIB=1;NDEBUG;_ATL_STATIC_REGISTRY;CMAKE_INTDIR=\"RelWithDebInfo\";ieview_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:/firebreath-FireBreath-df8659e;E:/firebreath-FireBreath-df8659e/src/3rdParty/gecko-sdk/includes;E:/firebreath-FireBreath-df8659e/src/NpapiCore;E:/firebreath-FireBreath-df8659e/src/ActiveXCore;E:/firebreath-FireBreath-df8659e/src/ScriptingCore;E:/firebreath-FireBreath-df8659e/src/PluginAuto/Win;E:/firebreath-FireBreath-df8659e/src/PluginAuto;E:/firebreath-FireBreath-df8659e/src/PluginCore;E:/firebreath-FireBreath-df8659e/build/projects/ieview/gen;E:/firebreath-FireBreath-df8659e/src/3rdParty/boost;C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/atlmfc/include;E:/firebreath-FireBreath-df8659e/src/config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:/firebreath-FireBreath-df8659e;E:/firebreath-FireBreath-df8659e/src/3rdParty/gecko-sdk/includes;E:/firebreath-FireBreath-df8659e/src/NpapiCore;E:/firebreath-FireBreath-df8659e/src/ActiveXCore;E:/firebreath-FireBreath-df8659e/src/ScriptingCore;E:/firebreath-FireBreath-df8659e/src/PluginAuto/Win;E:/firebreath-FireBreath-df8659e/src/PluginAuto;E:/firebreath-FireBreath-df8659e/src/PluginCore;E:/firebreath-FireBreath-df8659e/build/projects/ieview/gen;E:/firebreath-FireBreath-df8659e/src/3rdParty/boost;C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/atlmfc/include;E:/firebreath-FireBreath-df8659e/src/config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;psapi.lib;..\..\ActiveXCore\RelWithDebInfo\ActiveXCore.lib;..\..\PluginCore\RelWithDebInfo\PluginCore.lib;PluginAuto\RelWithDebInfo\iev_PluginAuto.lib;..\..\NpapiCore\RelWithDebInfo\NpapiCore.lib;..\..\ScriptingCore\RelWithDebInfo\ScriptingCore.lib;..\..\PluginCore\RelWithDebInfo\PluginCore.lib;..\..\boost\libs\thread\RelWithDebInfo\boost_thread.lib;..\..\boost\libs\system\RelWithDebInfo\boost_system.lib;psapi.lib;Wininet.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/atlmfc/lib</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>E:/firebreath-FireBreath-df8659e/build/projects/ieview/RelWithDebInfo/npieview.lib</ImportLibrary>
+      <LinkIncremental>true</LinkIncremental>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <ModuleDefinitionFile>E:/firebreath-FireBreath-df8659e/build/projects/ieview/gen/FireBreathWin.def</ModuleDefinitionFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>E:/firebreath-FireBreath-df8659e/build/bin/ieview/RelWithDebInfo/npieview.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\projects\ieview\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/firebreath-FireBreath-df8659e/projects/ieview/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HE:/firebreath-FireBreath-df8659e -BE:/firebreath-FireBreath-df8659e/build --check-stamp-file E:\firebreath-FireBreath-df8659e\build\projects\ieview\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/firebreath-FireBreath-df8659e/projects/ieview/CMakeLists.txt;E:\firebreath-FireBreath-df8659e\projects\ieview\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\projects\ieview\Win\projectDef.cmake;E:\firebreath-FireBreath-df8659e\projects\ieview\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\firebreath-FireBreath-df8659e\build\projects\ieview\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/firebreath-FireBreath-df8659e/projects/ieview/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HE:/firebreath-FireBreath-df8659e -BE:/firebreath-FireBreath-df8659e/build --check-stamp-file E:\firebreath-FireBreath-df8659e\build\projects\ieview\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/firebreath-FireBreath-df8659e/projects/ieview/CMakeLists.txt;E:\firebreath-FireBreath-df8659e\projects\ieview\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\projects\ieview\Win\projectDef.cmake;E:\firebreath-FireBreath-df8659e\projects\ieview\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\firebreath-FireBreath-df8659e\build\projects\ieview\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule E:/firebreath-FireBreath-df8659e/projects/ieview/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HE:/firebreath-FireBreath-df8659e -BE:/firebreath-FireBreath-df8659e/build --check-stamp-file E:\firebreath-FireBreath-df8659e\build\projects\ieview\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/firebreath-FireBreath-df8659e/projects/ieview/CMakeLists.txt;E:\firebreath-FireBreath-df8659e\projects\ieview\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\projects\ieview\Win\projectDef.cmake;E:\firebreath-FireBreath-df8659e\projects\ieview\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\firebreath-FireBreath-df8659e\build\projects\ieview\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule E:/firebreath-FireBreath-df8659e/projects/ieview/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HE:/firebreath-FireBreath-df8659e -BE:/firebreath-FireBreath-df8659e/build --check-stamp-file E:\firebreath-FireBreath-df8659e\build\projects\ieview\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/firebreath-FireBreath-df8659e/projects/ieview/CMakeLists.txt;E:\firebreath-FireBreath-df8659e\projects\ieview\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\projects\ieview\Win\projectDef.cmake;E:\firebreath-FireBreath-df8659e\projects\ieview\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\firebreath-FireBreath-df8659e\build\projects\ieview\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\projects\ieview\ieview.h" />
+    <ClInclude Include="..\..\..\projects\ieview\ieviewAPI.h" />
+    <ClInclude Include="gen\rcgen.sh.in" />
+    <ClInclude Include="gen\global\axplugin_defs.h" />
+    <ClInclude Include="gen\global\COM_config.h" />
+    <ClInclude Include="gen\global\config.h" />
+    <ClInclude Include="gen\global\resource.h" />
+    <ClCompile Include="..\..\..\projects\ieview\Factory.cpp"  />
+    <ClCompile Include="..\..\..\projects\ieview\ieview.cpp"  />
+    <ClCompile Include="..\..\..\projects\ieview\ieviewAPI.cpp"  />
+    <ResourceCompile Include="gen\firebreathWin.rc"  />
+    <None Include="..\..\..\projects\ieview\PluginConfig.cmake" />
+    <None Include="gen\ExportList_plugin.txt" />
+    <None Include="gen\FBControl.htm" />
+    <None Include="gen\FBControl.rgs" />
+    <None Include="gen\FireBreathWin.rgs" />
+    <None Include="gen\global" />
+    <None Include="gen\README.txt" />
+    <None Include="gen\version_script.txt" />
+    <None Include="gen\global\axplugin_defs.inc" />
+    <None Include="..\..\..\projects\ieview\Win\projectDef.cmake" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:/firebreath-FireBreath-df8659e/build/ActiveXCore/ActiveXCore.vcxproj">
+      <Project>C4475A16-4BBC-4F4E-999C-3A141857E227</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/firebreath-FireBreath-df8659e/build/NpapiCore/NpapiCore.vcxproj">
+      <Project>F097A59E-3536-4E31-B05E-4C009F3C377B</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/firebreath-FireBreath-df8659e/build/PluginCore/PluginCore.vcxproj">
+      <Project>1A0605C2-C5E1-4E7F-9D8D-A5E01AB1FD6B</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/firebreath-FireBreath-df8659e/build/ScriptingCore/ScriptingCore.vcxproj">
+      <Project>D4327D5B-C1E4-4597-82F4-164536EEC5FB</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/firebreath-FireBreath-df8659e/build/ZERO_CHECK.vcxproj">
+      <Project>27D804A6-762C-4856-AA23-B2D4CC892310</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/firebreath-FireBreath-df8659e/build/boost/libs/system/boost_system.vcxproj">
+      <Project>B5893255-8217-4DAE-9CC0-FC8B4718E933</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/firebreath-FireBreath-df8659e/build/boost/libs/thread/boost_thread.vcxproj">
+      <Project>11EC5D6A-6EA9-4D28-BCF3-B868A8CC1033</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/firebreath-FireBreath-df8659e/build/projects/ieview/PluginAuto/iev_PluginAuto.vcxproj">
+      <Project>67BBB436-7C7F-47A7-A7B6-942B9CFAA4C8</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

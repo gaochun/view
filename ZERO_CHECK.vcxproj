@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{27D804A6-762C-4856-AA23-B2D4CC892310}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ZERO_CHECK</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeFiles\13f80b442270563e06fe9bcc62582064\generate.stamp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HE:/firebreath-FireBreath-df8659e -BE:/firebreath-FireBreath-df8659e/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/firebreath-FireBreath-df8659e/build/CMakeFiles/13f80b442270563e06fe9bcc62582064/generate.stamp.rule;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;E:\firebreath-FireBreath-df8659e\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\build\CMakeFiles\2.8.10.2\CMakeCCompiler.cmake;E:\firebreath-FireBreath-df8659e\build\CMakeFiles\2.8.10.2\CMakeCXXCompiler.cmake;E:\firebreath-FireBreath-df8659e\build\CMakeFiles\2.8.10.2\CMakeRCCompiler.cmake;E:\firebreath-FireBreath-df8659e\build\CMakeFiles\2.8.10.2\CMakeSystem.cmake;E:\firebreath-FireBreath-df8659e\cmake\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\cmake\CommonPluginConfig.cmake;E:\firebreath-FireBreath-df8659e\cmake\PluginConfigDefaults.cmake;E:\firebreath-FireBreath-df8659e\cmake\Win.cmake;E:\firebreath-FireBreath-df8659e\cmake\buildconfig.cmake;E:\firebreath-FireBreath-df8659e\cmake\chrome.cmake;E:\firebreath-FireBreath-df8659e\cmake\common.cmake;E:\firebreath-FireBreath-df8659e\cmake\configure_template.cmake;E:\firebreath-FireBreath-df8659e\cmake\options.cmake;E:\firebreath-FireBreath-df8659e\cmake\paths.cmake;E:\firebreath-FireBreath-df8659e\cmake\pluginProjects.cmake;E:\firebreath-FireBreath-df8659e\cmake\wix.cmake;E:\firebreath-FireBreath-df8659e\cmake\xpi.cmake;E:\firebreath-FireBreath-df8659e\projects\ieview\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\projects\ieview\PluginConfig.cmake;E:\firebreath-FireBreath-df8659e\projects\ieview\Win\projectDef.cmake;E:\firebreath-FireBreath-df8659e\src\3rdParty\boost\libs\date_time\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\3rdParty\boost\libs\regex\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\3rdParty\boost\libs\system\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\3rdParty\boost\libs\thread\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\ActiveXCore\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\NpapiCore\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\PluginAuto\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\PluginCore\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\ScriptingCore\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\tests\ActiveXCoreTest\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\tests\ScriptingCoreTest\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\tests\unittest-cpp\UnitTest++\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\firebreath-FireBreath-df8659e\build\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\cmake_common\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\boost\libs\thread\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\boost\libs\system\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\ScriptingCore\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\PluginCore\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\NpapiCore\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\ActiveXCore\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\projects\ieview\PluginAuto\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\projects\ieview\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\unittest-cpp\UnitTest++\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\ScriptingCoreTest\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\boost\libs\date_time\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\boost\libs\regex\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\ActiveXCoreTest\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HE:/firebreath-FireBreath-df8659e -BE:/firebreath-FireBreath-df8659e/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/firebreath-FireBreath-df8659e/build/CMakeFiles/13f80b442270563e06fe9bcc62582064/generate.stamp.rule;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;E:\firebreath-FireBreath-df8659e\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\build\CMakeFiles\2.8.10.2\CMakeCCompiler.cmake;E:\firebreath-FireBreath-df8659e\build\CMakeFiles\2.8.10.2\CMakeCXXCompiler.cmake;E:\firebreath-FireBreath-df8659e\build\CMakeFiles\2.8.10.2\CMakeRCCompiler.cmake;E:\firebreath-FireBreath-df8659e\build\CMakeFiles\2.8.10.2\CMakeSystem.cmake;E:\firebreath-FireBreath-df8659e\cmake\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\cmake\CommonPluginConfig.cmake;E:\firebreath-FireBreath-df8659e\cmake\PluginConfigDefaults.cmake;E:\firebreath-FireBreath-df8659e\cmake\Win.cmake;E:\firebreath-FireBreath-df8659e\cmake\buildconfig.cmake;E:\firebreath-FireBreath-df8659e\cmake\chrome.cmake;E:\firebreath-FireBreath-df8659e\cmake\common.cmake;E:\firebreath-FireBreath-df8659e\cmake\configure_template.cmake;E:\firebreath-FireBreath-df8659e\cmake\options.cmake;E:\firebreath-FireBreath-df8659e\cmake\paths.cmake;E:\firebreath-FireBreath-df8659e\cmake\pluginProjects.cmake;E:\firebreath-FireBreath-df8659e\cmake\wix.cmake;E:\firebreath-FireBreath-df8659e\cmake\xpi.cmake;E:\firebreath-FireBreath-df8659e\projects\ieview\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\projects\ieview\PluginConfig.cmake;E:\firebreath-FireBreath-df8659e\projects\ieview\Win\projectDef.cmake;E:\firebreath-FireBreath-df8659e\src\3rdParty\boost\libs\date_time\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\3rdParty\boost\libs\regex\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\3rdParty\boost\libs\system\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\3rdParty\boost\libs\thread\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\ActiveXCore\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\NpapiCore\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\PluginAuto\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\PluginCore\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\ScriptingCore\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\tests\ActiveXCoreTest\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\tests\ScriptingCoreTest\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\tests\unittest-cpp\UnitTest++\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\firebreath-FireBreath-df8659e\build\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\cmake_common\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\boost\libs\thread\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\boost\libs\system\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\ScriptingCore\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\PluginCore\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\NpapiCore\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\ActiveXCore\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\projects\ieview\PluginAuto\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\projects\ieview\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\unittest-cpp\UnitTest++\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\ScriptingCoreTest\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\boost\libs\date_time\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\boost\libs\regex\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\ActiveXCoreTest\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HE:/firebreath-FireBreath-df8659e -BE:/firebreath-FireBreath-df8659e/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/firebreath-FireBreath-df8659e/build/CMakeFiles/13f80b442270563e06fe9bcc62582064/generate.stamp.rule;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;E:\firebreath-FireBreath-df8659e\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\build\CMakeFiles\2.8.10.2\CMakeCCompiler.cmake;E:\firebreath-FireBreath-df8659e\build\CMakeFiles\2.8.10.2\CMakeCXXCompiler.cmake;E:\firebreath-FireBreath-df8659e\build\CMakeFiles\2.8.10.2\CMakeRCCompiler.cmake;E:\firebreath-FireBreath-df8659e\build\CMakeFiles\2.8.10.2\CMakeSystem.cmake;E:\firebreath-FireBreath-df8659e\cmake\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\cmake\CommonPluginConfig.cmake;E:\firebreath-FireBreath-df8659e\cmake\PluginConfigDefaults.cmake;E:\firebreath-FireBreath-df8659e\cmake\Win.cmake;E:\firebreath-FireBreath-df8659e\cmake\buildconfig.cmake;E:\firebreath-FireBreath-df8659e\cmake\chrome.cmake;E:\firebreath-FireBreath-df8659e\cmake\common.cmake;E:\firebreath-FireBreath-df8659e\cmake\configure_template.cmake;E:\firebreath-FireBreath-df8659e\cmake\options.cmake;E:\firebreath-FireBreath-df8659e\cmake\paths.cmake;E:\firebreath-FireBreath-df8659e\cmake\pluginProjects.cmake;E:\firebreath-FireBreath-df8659e\cmake\wix.cmake;E:\firebreath-FireBreath-df8659e\cmake\xpi.cmake;E:\firebreath-FireBreath-df8659e\projects\ieview\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\projects\ieview\PluginConfig.cmake;E:\firebreath-FireBreath-df8659e\projects\ieview\Win\projectDef.cmake;E:\firebreath-FireBreath-df8659e\src\3rdParty\boost\libs\date_time\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\3rdParty\boost\libs\regex\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\3rdParty\boost\libs\system\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\3rdParty\boost\libs\thread\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\ActiveXCore\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\NpapiCore\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\PluginAuto\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\PluginCore\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\ScriptingCore\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\tests\ActiveXCoreTest\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\tests\ScriptingCoreTest\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\tests\unittest-cpp\UnitTest++\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\firebreath-FireBreath-df8659e\build\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\cmake_common\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\boost\libs\thread\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\boost\libs\system\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\ScriptingCore\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\PluginCore\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\NpapiCore\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\ActiveXCore\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\projects\ieview\PluginAuto\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\projects\ieview\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\unittest-cpp\UnitTest++\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\ScriptingCoreTest\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\boost\libs\date_time\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\boost\libs\regex\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\ActiveXCoreTest\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HE:/firebreath-FireBreath-df8659e -BE:/firebreath-FireBreath-df8659e/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/firebreath-FireBreath-df8659e/build/CMakeFiles/13f80b442270563e06fe9bcc62582064/generate.stamp.rule;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;E:\firebreath-FireBreath-df8659e\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\build\CMakeFiles\2.8.10.2\CMakeCCompiler.cmake;E:\firebreath-FireBreath-df8659e\build\CMakeFiles\2.8.10.2\CMakeCXXCompiler.cmake;E:\firebreath-FireBreath-df8659e\build\CMakeFiles\2.8.10.2\CMakeRCCompiler.cmake;E:\firebreath-FireBreath-df8659e\build\CMakeFiles\2.8.10.2\CMakeSystem.cmake;E:\firebreath-FireBreath-df8659e\cmake\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\cmake\CommonPluginConfig.cmake;E:\firebreath-FireBreath-df8659e\cmake\PluginConfigDefaults.cmake;E:\firebreath-FireBreath-df8659e\cmake\Win.cmake;E:\firebreath-FireBreath-df8659e\cmake\buildconfig.cmake;E:\firebreath-FireBreath-df8659e\cmake\chrome.cmake;E:\firebreath-FireBreath-df8659e\cmake\common.cmake;E:\firebreath-FireBreath-df8659e\cmake\configure_template.cmake;E:\firebreath-FireBreath-df8659e\cmake\options.cmake;E:\firebreath-FireBreath-df8659e\cmake\paths.cmake;E:\firebreath-FireBreath-df8659e\cmake\pluginProjects.cmake;E:\firebreath-FireBreath-df8659e\cmake\wix.cmake;E:\firebreath-FireBreath-df8659e\cmake\xpi.cmake;E:\firebreath-FireBreath-df8659e\projects\ieview\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\projects\ieview\PluginConfig.cmake;E:\firebreath-FireBreath-df8659e\projects\ieview\Win\projectDef.cmake;E:\firebreath-FireBreath-df8659e\src\3rdParty\boost\libs\date_time\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\3rdParty\boost\libs\regex\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\3rdParty\boost\libs\system\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\3rdParty\boost\libs\thread\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\ActiveXCore\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\NpapiCore\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\PluginAuto\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\PluginCore\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\src\ScriptingCore\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\tests\ActiveXCoreTest\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\tests\ScriptingCoreTest\CMakeLists.txt;E:\firebreath-FireBreath-df8659e\tests\unittest-cpp\UnitTest++\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\firebreath-FireBreath-df8659e\build\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\cmake_common\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\boost\libs\thread\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\boost\libs\system\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\ScriptingCore\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\PluginCore\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\NpapiCore\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\ActiveXCore\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\projects\ieview\PluginAuto\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\projects\ieview\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\unittest-cpp\UnitTest++\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\ScriptingCoreTest\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\boost\libs\date_time\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\boost\libs\regex\CMakeFiles\generate.stamp;E:\firebreath-FireBreath-df8659e\build\ActiveXCoreTest\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeFiles\13f80b442270563e06fe9bcc62582064\ZERO_CHECK.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/firebreath-FireBreath-df8659e/build/CMakeFiles/13f80b442270563e06fe9bcc62582064/ZERO_CHECK.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\firebreath-FireBreath-df8659e\build\CMakeFiles\ZERO_CHECK</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/firebreath-FireBreath-df8659e/build/CMakeFiles/13f80b442270563e06fe9bcc62582064/ZERO_CHECK.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\firebreath-FireBreath-df8659e\build\CMakeFiles\ZERO_CHECK</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/firebreath-FireBreath-df8659e/build/CMakeFiles/13f80b442270563e06fe9bcc62582064/ZERO_CHECK.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\firebreath-FireBreath-df8659e\build\CMakeFiles\ZERO_CHECK</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/firebreath-FireBreath-df8659e/build/CMakeFiles/13f80b442270563e06fe9bcc62582064/ZERO_CHECK.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\firebreath-FireBreath-df8659e\build\CMakeFiles\ZERO_CHECK</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\ZERO_CHECK" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\tests\ActiveXCoreTest\ActiveXCoreTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tests\ActiveXCoreTest\TestAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PluginAuto\PluginInfo.cpp">
+      <Filter>Imported</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tests\mock\axmain.cpp">
+      <Filter>Imported</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tests\mock\BlankFactories.cpp">
+      <Filter>Imported</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PluginAuto\null\NullLogger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\tests\ActiveXCoreTest\COMJavascriptObjectTest.h">
+      <Filter>Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tests\ActiveXCoreTest\TestAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\tests\ActiveXCoreTest\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{964C809C-0F05-4434-8C46-4E0D7F9ACEA9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{09881D82-5D48-450E-8522-FE7D267EBEFE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{EEAAC658-F263-4620-8BF3-44A2BEB91AC0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Imported">
+      <UniqueIdentifier>{A155E5DF-FFDA-49D0-8170-207040E8078D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
